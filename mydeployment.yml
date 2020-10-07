@@ -15,6 +15,6 @@ spec:
           image: avanikasingh/ht:1.0
           ports:
            - containerPort: 80
-   selector:
-     matchLabels:
-       app: httpd
+  selector:
+    matchLabels:
+      app: httpd
