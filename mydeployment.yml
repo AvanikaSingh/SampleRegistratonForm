@@ -14,7 +14,7 @@ spec:
         - name: https-con
           image: avanikasingh/ht:1.0
           ports:
-             -  containerPort: 80
+           - containerPort: 80
    selector:
      matchLabels:
        app: httpd
