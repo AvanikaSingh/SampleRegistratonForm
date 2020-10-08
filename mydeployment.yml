@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ht-deployment
+  name: httpd-deployment
   labels:
     app: httpd
 spec:
@@ -12,7 +12,7 @@ spec:
     spec:
       container:
         - name: httpd-con
-          image: avanikasingh/ht:1.0
+          image: avanikasingh/httpd:1.0
           ports:
             - containerPort: 80
   selector:
