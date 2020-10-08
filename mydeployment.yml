@@ -10,11 +10,11 @@ spec:
       labels:
         app: httpd
     spec:
-      containers:
-        - name: https-con
+      container:
+        - name: httpd-con
           image: avanikasingh/ht:1.0
           ports:
-           - containerPort: 80
+            - containerPort: 80
   selector:
     matchLabels:
-      app: httpd
+      app: httpd    
