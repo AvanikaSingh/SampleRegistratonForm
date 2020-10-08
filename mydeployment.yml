@@ -10,7 +10,7 @@ spec:
       labels:
         app: httpd
     spec:
-      container:
+      containers:
         - name: httpd-con
           image: avanikasingh/httpd:1.0
           ports:
